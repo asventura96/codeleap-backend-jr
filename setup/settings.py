@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # Apps de terceiros
     'rest_framework',
     'corsheaders',
+    'drf_spectacular',
 
     # Meus apps
     'posts',
@@ -137,3 +138,11 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Configuração do CORS
 CORS_ALLOW_ALL_ORIGINS = True
+
+# CONFIGURAÇÕES DO DJANGO REST FRAMEWORK
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.'
+    'PageNumberPagination',
+    'PAGE_SIZE': 10,
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
