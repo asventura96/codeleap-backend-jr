@@ -1,0 +1,41 @@
+# Secret configuration file
+.env
+
+# Local database
+db.sqlite3
+*.sqlite3-journal
+
+# Virtual environment folder
+venv/
+.venv/
+env/
+.env/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Log and other temporary files
+*.log
+celerybeat-schedule
+
+# Code Editor and IDE configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Collected static and media files (good practice)
+/static/
+/media/
+
+# Test and coverage files
+.pytest_cache/
+.coverage
+htmlcov/
